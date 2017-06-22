@@ -26,5 +26,4 @@ function run()
     }
   table += '</table>'
   $('#main-table').html(table);
-  return false;
 }
