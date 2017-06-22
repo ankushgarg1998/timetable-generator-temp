@@ -1,21 +1,8 @@
 function day(x)
   {
-  if (x == 1)
-    return 'Monday';
-  else if (x == 2)
-    return 'Tuesday';
-  else if (x==3)
-    return 'Wednesday';
-  else if (x==4)
-    return 'Thursday';
-  else if (x==5)
-    return 'Friday';
-  else if (x==6)
-    return 'Saturday';
-  else if (x==7)
-    return 'Sunday';
+  return ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"][x-1];
   }
-$('#ttbox').hide();
+
 function run()
   {
   //Form Validation Pending
@@ -39,4 +26,5 @@ function run()
     }
   table += '</table>'
   $('#main-table').html(table);
-  }
+  return false;
+}
